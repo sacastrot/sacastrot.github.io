@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.user-create {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    box-shadow: 10px 5px 5px black ;
+    align-items: center;
+}
+
+.user-create h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px, solid #1f35c5;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 18px;
+}
+
+.user-create .button{
+    margin-top: 20px;
+    width: 40%;
+    text-align: center;
+    border: none;
+    background-color: #526f84;
+    padding: 15px;
+    color: white;    
+    font-size: 16px;
+    position: relative;
+    align-self: center;
+    border-radius: 2px;
+}
+.button:hover{
+    background-color: #679fc7;
+}
+
+.user-create p{
+    margin-top: 10px;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+body {
+    background-image: url(background.png);
+}
+
+a:link {
+    text-decoration: none;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-instance{
+    width: 80%;
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow:10px 5px 5px black ;
+}

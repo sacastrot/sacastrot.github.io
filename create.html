@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Document</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Data Scientist</a>
+    </nav>
+</head>
+<body>
+   
+    <section class="user-create">
+        <h4>Create User</h4>
+        <input class="controls", type="text", name="Name", placeholder="Insert name">
+        <input class="controls", type="email", name="Email", placeholder="Insert email">
+        <input class="controls", type="password", name="Password", placeholder="Insert password">
+        <input class="controls", type="password", name="ConfirmPassword", placeholder="Confirm password">
+        <select id="RoleUser", name="Role", class="controls">
+            <option value="Administrator">ADMINISTRATOR</option> 
+            <option value="DataScientist">DATA SCIENTIST</option> 
+            <option value="Stakeholder">STAKEHOLDER</option> 
+        </select>
+        <div>
+            <a href="/" type="submit", class="button", >Create</a>
+            <a href="/index.html" type="submit", class="button">Cancel</a>
+        </div>
+    </section>
+</body>
+</html>
