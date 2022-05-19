@@ -1,4 +1,14 @@
  var event1 = false;
+ function TEadmin1(){
+    var numValidate = getRandomInt(1,20);
+    if(numValidate<10){
+        event1 = true;
+        alert("Llego alguien!!!");
+    }else{
+        event1 = false;
+        alert("No ha llegado nadie");
+    }
+ }
  function validateEvent(){
     if(event1){
         window.location.href="/create.html";
@@ -9,14 +19,24 @@
 
 function over(){
     if(event1){
-        document.getElementById("path168").setAttribute("fill","#ffff00");
+        document.getElementById("Radmin1").style.cursor="pointer";
+        document.getElementById("RadminTxt1").style.cursor="pointer";
     }else{
-        document.getElementById("path168").setAttribute("fill","gray");
-        document.getElementById("path168").style.cursor="not-allowed";
-        document.getElementById("text170").style.cursor="not-allowed";
-        document.getElementById("switch172").style.cursor="not-allowed";
+        document.getElementById("Radmin1").setAttribute("fill","#D2D267");
+        document.getElementById("Radmin1").style.cursor="not-allowed";
+        document.getElementById("RadminTxt1").style.cursor="not-allowed";
     }
 }
 function out(){
-    document.getElementById("path168").setAttribute("fill","#ffff00");
+    document.getElementById("Radmin1").setAttribute("fill","#ffff00");
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+function pointer(){
+    var list = document.getElementsByClassName("onclick");
+    for (index = 0; index < list.length; ++index){
+        list[index].style.cursor="pointer";
+    }
 }
