@@ -40,3 +40,6 @@ function pointer(){
         list[index].style.cursor="pointer";
     }
 }
+function createUser(){
+    window.location.href =  "index.html"
+}
