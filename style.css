@@ -158,6 +158,7 @@ td, th{
     padding-right: 1em;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: center;
 }
 thead{
     color: white;
@@ -186,4 +187,13 @@ a:hover{
 a{
     color: #000000 !important;
     font-weight: 400 !important;
+}
+.create-user{
+    font-size: 15px;
+    color: blue;
+}
+
+.delete-user{
+    font-size: 15px;
+    color: red;
 }

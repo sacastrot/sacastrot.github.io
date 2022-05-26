@@ -47,3 +47,12 @@ function createUser(){
 function cancelEdit(){
     window.location.href = "manages_user.html"
 }
+
+function clickUser(){
+    document.getElementById("buttonUser1").style.cursor="pointer"
+    document.getElementById("buttonUser2").style.cursor="pointer"
+    document.getElementById("buttonUser3").style.cursor="pointer"
+    document.getElementById("buttonUser4").style.cursor="pointer"
+    document.getElementById("buttonUser5").style.cursor="pointer"
+    document.getElementById("buttonUser6").style.cursor="pointer"
+}
