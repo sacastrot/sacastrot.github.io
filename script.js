@@ -43,3 +43,7 @@ function pointer(){
 function createUser(){
     window.location.href =  "index.html"
 }
+
+function cancelEdit(){
+    window.location.href = "manages_user.html"
+}
