@@ -40,19 +40,60 @@ function pointer(){
         list[index].style.cursor="pointer";
     }
 }
-function createUser(){
-    window.location.href =  "index.html"
+function index(){
+    window.location.href="index.html"
 }
 
 function cancelEdit(){
-    window.location.href = "manages_user.html"
+    window.location.href="manages_user.html"
 }
 
-function clickUser(){
-    document.getElementById("buttonUser1").style.cursor="pointer"
-    document.getElementById("buttonUser2").style.cursor="pointer"
-    document.getElementById("buttonUser3").style.cursor="pointer"
-    document.getElementById("buttonUser4").style.cursor="pointer"
-    document.getElementById("buttonUser5").style.cursor="pointer"
-    document.getElementById("buttonUser6").style.cursor="pointer"
+function userEdit(){
+    window.location.href="user_edit.html"
+}
+
+function loadType() {
+    var type = ["STRUCTURED","UNSTRUCTURED"];
+    for(var i=0;i<type.length;i+=1){
+        var option = document.createElement("OPTION");
+        option.innerHTML=type[i];
+        document.getElementById("type").appendChild(option)
+
+    }
+}
+
+function loadFormat() {
+
+    var listFormats = {
+      STRUCTURED: ["ATTRIBUTES","DATABASE"],
+      UNSTRUCTURED: ["IMAGES","VIDEO FOOTAGE","AUDIO","HANDWRITTEN NOTE"]
+    }
+    
+    var type = document.getElementById("type")
+    var format = document.getElementById("format")
+    var selectedType = type.value;
+    // Se limpian los pueblos
+    format.innerHTML = '<option value="">Select format ...</option>'
+    
+    if(selectedType !== ''){
+      // Se seleccionan los pueblos y se ordenan
+      selectedType = listFormats[selectedType]
+    
+      // Insertamos los pueblos
+      for(var i=0;i<selectedType.length;i+=1){
+          var option = document.createElement("OPTION");
+          option.innerHTML=selectedType[i];
+          document.getElementById("format").appendChild(option)
+
+      }
+    }
+    
+  }
+
+function cleans(){
+    window.location.href="/provides.html"
+}
+
+function extractSummary(){
+    window.location.href="/extracts_summary.html"
 }

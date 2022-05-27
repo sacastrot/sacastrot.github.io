@@ -19,90 +19,60 @@
       <table>
         <thead>
           <tr>
-            <th>Identification</th>
+            <th colspan="2">Identification</th>
             <th>Name</th>
             <th>Password</th>
             <th>Email</th>
             <th>Role</th>
-            <th colspan="2"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><input name="answerAdmin" type="radio"></td>
             <td>1007290916</td>
             <td>Valentin Osorio</td>
             <td>*************</td>
             <td>dosoriom@unal.edu.co</td>
             <td>ADMINISTRATOR</td>
-            <td>
-              <div class="create-user" id="buttonUser1" onclick="createUser()" onmouseover="clickUser()">Create</div>
-            </td>
-            <td>
-              <div class="delete-user" id="buttonUser2" onclick="deleteUser()" onmouseover="clickUser()">Delete</div>
-            </td>
           </tr>
           <tr>
+            <td><input name="answerAdmin" type="radio"></td>
             <td>1008745824</td>
             <td>Santiago Castro</td>
             <td>*************</td>
             <td>sacastrot@unal.edu.co</td>
             <td>ADMINISTRATOR</td>
-            <td>
-              <div class="create-user" id="buttonUser3" onclick="createUser()" onmouseover="clickUser()">Create</div>
-            </td>
-            <td>
-              <div class="delete-user" id="buttonUser4" onclick="deleteUser()" onmouseover="clickUser()">Delete</div>
-            </td>
           </tr>
           <tr>
+            <td><input name="answerAdmin" type="radio"></td>
             <td>1008634586</td>
             <td>Fredy Orozco</td>
             <td>*************</td>
             <td>forozcol@unal.edu.co</td>
             <td>DATA SCIENTIST</td>
-            <td>
-                <a href="user_edit.html">
-                    <img src="images/edits.png"  width="20">
-                </a>
-            </td>
-            <td>
-                <a href="">
-                    <img src="images/delete.png"  width="20">
-                </a>
-            </td>
           </tr>
           <tr>
+            <td><input name="answerAdmin" type="radio"></td>
             <td>1007899123</td>
             <td>Andres Monsalve</td>
             <td>*************</td>
             <td>jmonsalveb@unal.edu.co</td>
             <td>DATA SCIENTIST</td>
-            <td>
-                <a href="user_edit.html">
-                    <img src="images/edits.png"  width="20">
-                </a>
-            </td>
-            <td>
-                <a href="">
-                    <img src="images/delete.png"  width="20">
-                </a>
-            </td>
           </tr>
           <tr>
+            <td><input name="answerAdmin" type="radio"></td>
             <td>70943671</td>
             <td>Tony Stark</td>
             <td>*************</td>
             <td>tstark@unal.edu.co</td>
             <td>STAKEHOLDER</td>
-            <td>
-              <div class="create-user" id="buttonUser5" onclick="createUser()" onmouseover="clickUser()">Create</div>
-            </td>
-            <td>
-              <div class="delete-user" id="buttonUser6" onclick="deleteUser()" onmouseover="clickUser()">Delete</div>
-            </td>
           </tr>
         </tbody>
       </table>
+      <div class="content-button-manages">
+        <button class="manages" type="submit" onclick="userEdit()">Edit</button>
+        <button class="manages" type="submit" onclick="index()">Delete</button>
+      </div>
     </div>
 </body>
 </html>
