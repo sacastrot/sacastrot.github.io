@@ -22,6 +22,7 @@ body{
     background-size: auto;
     height: 100vh;
     font-style: "Roboto";
+    font-size: 20px;
 }
 h1{
     text-align: center;
@@ -58,6 +59,7 @@ div.form{
 }
 div.group{
     margin: 20px;
+    font-size: 20px;
 
 }
 
@@ -69,7 +71,7 @@ button.finish{
     margin: 10px auto;
     color: #fff;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -84,7 +86,7 @@ span{
     display: block;
     position: relative;
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 20px;
 }
 select{
     border: none;
@@ -108,7 +110,7 @@ button.upload{
     background: var(--third);  /* fallback for old browsers */
     border: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
 }
 

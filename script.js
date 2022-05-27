@@ -65,13 +65,13 @@ function userEdit(){
 }
 
 function loadType() {
-    var type = ["STRUCTURED","UNSTRUCTURED"];
-    for(var i=0;i<type.length;i+=1){
-        var option = document.createElement("OPTION");
-        option.innerHTML=type[i];
-        document.getElementById("type").appendChild(option)
+    // var type = ["STRUCTURED","UNSTRUCTURED"];
+    // for(var i=0;i<type.length;i+=1){
+    //     var option = document.createElement("OPTION");
+    //     option.innerHTML=type[i];
+    //     document.getElementById("type").appendChild(option)
 
-    }
+    // }
 }
 
 function loadFormat() {
