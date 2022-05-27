@@ -44,6 +44,18 @@ function index(){
     window.location.href="index.html"
 }
 
+ModelNext = ()=>{
+    window.location.href = "model_table.html"
+}
+ApplicationNext = ()=>{
+    window.location.href = "application_create.html"
+}
+UpdateModelApplication = ()=>{
+    window.location.href = "update_model_application.html"
+}
+updatesolution = ()=>{
+    window.location.href = "solution_update.html"
+}
 function cancelEdit(){
     window.location.href="manages_user.html"
 }
