@@ -14,34 +14,36 @@
     <nav>
         <a href="/">Data Scientist</a>
     </nav>
-    <div class="content-table-user">
-      <P class="table-title">Model</P>
-      <table>
+    <div class="content-table-builds-model">
+      <P class="table-title">SELECT APPLICATION</P>
+      <table class="update-model">
         <thead>
           <tr>
-            <th></th>
-            <th>model</th>
+            <th colspan="2">Model name</th>
+            <th>Data name</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Regretion - Lineal Regretion</td>
+            <td>Differential equations model</td>
+            <td>Users data</td>
           </tr>
           <tr>
             <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Classification - Resnet</td>
-            
+            <td>Iris class model</td>
+            <td>Iris data</td>
           </tr>
           <tr>
             <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Unsupervised - K-means</td>
-            
+            <td>Fraud detection model</td>
+            <td>Movies data</td>
+          </tr>
         </tbody>
       </table>
-      <div class="content-button2">
-        <button type="submit" onclick="ApplicationNext()">Next</button>
     </div>
-    </div>
+    <div class="content-button-builds">
+      <button class="builds" type="submit" onclick="updateNext()">Next</button>
+  </div>
 </body>
 </html>

@@ -59,6 +59,10 @@ td, th{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+td.stakeholder{
+    text-align: center;
+}
 thead{
     color: white;
     background-color: var(--second);

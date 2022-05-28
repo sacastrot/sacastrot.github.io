@@ -109,3 +109,7 @@ function cleans(){
 function extractSummary(){
     window.location.href="/extracts_summary.html"
 }
+
+function updateNext(){
+    window.location.href="solution_update.html"
+}

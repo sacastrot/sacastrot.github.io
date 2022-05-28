@@ -164,6 +164,23 @@ div.content-table-dataBuilds{
     flex-direction: column;
 }
 
+div.content-table-builds-model{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+table.update-model{
+    width: 60%;
+    font-size: 25px;
+}
+
+table.builds-application{
+    width: 35%;
+    font-size: 25px;
+}
+
 div.content-button-builds{
     display: flex;
     justify-content: center;
