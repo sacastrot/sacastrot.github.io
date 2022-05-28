@@ -149,7 +149,6 @@ table.builds{
     width: 60%;
     font-size: 25px;
 }
-
 div.content-table-user{
     display: flex;
     align-items: center;
@@ -193,6 +192,7 @@ td, th{
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
+    min-width: 100px;
 }
 thead{
     color: white;
