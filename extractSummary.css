@@ -81,6 +81,12 @@ div.content-button{
     justify-content: space-between;
     margin-top: 0px;
 }
+div.content-button2{
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
 span{
     width: 100%;
     display: block;
