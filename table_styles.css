@@ -1,0 +1,147 @@
+:root {
+    --color-text: #414346;
+    --color-bar:#9b8f8f;
+    --first: #112031;
+    --second: #152d35;
+    --third: #345b63;
+    --fourth: #d4ecdd;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table.general{
+    background-color: white;
+    width: 50%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 18px;
+}
+table.three{
+    background-color: white;
+    width: 30%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 18px;
+}
+table.six{
+    background-color: white;
+    width: 60%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 18px;
+}
+table.seven{
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 18px;
+}
+table.ninefive{
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    width: 95%;
+    font-size: 18px;
+}
+table.eight{
+    background-color: white;
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 18px;
+    text-align: center;
+}
+table.twofive{
+    background-color: white;
+    width: 25%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 6px 0 #112031;
+    font-size: 20px;
+    text-align: center;
+}
+div.content-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+thead {
+    color: white;
+    background-color: var(--second);
+    border-bottom: solid 1px #112031;
+    text-align: center;
+}
+
+td, th{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    min-width: 100px;
+    word-wrap: break-word;
+}
+
+td.stakeholder{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #F7F7F7;
+}
+
+tr:hover td{
+    background-color: var(--fourth);
+}
+
+.table-title{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+div.button-table{
+    display: flex;
+    align-content: center;
+    margin-top: 2%;
+}
+div.button-table-manages{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 2%;
+}
+button.general{
+    font-family: 'roboto';
+    width: 15rem;
+    background: var(--third);  /* fallback for old browsers */
+    border: none;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.general:hover{
+    background-color: white;
+    color: black;
+}

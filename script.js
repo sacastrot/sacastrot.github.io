@@ -44,24 +44,17 @@ function index(){
     window.location.href="index.html"
 }
 
-ModelNext = ()=>{
-    window.location.href = "model_table.html"
+scientistBuild2 = ()=>{
+    window.location.href = "scientist_build2.html"
 }
-ApplicationNext = ()=>{
+scientistUpdate2= ()=>{
+    window.location.href = "scientist_update2.html"
+}
+applicationCreate = ()=>{
     window.location.href = "application_create.html"
 }
-UpdateModelApplication = ()=>{
-    window.location.href = "update_model_application.html"
-}
-updatesolution = ()=>{
-    window.location.href = "solution_update.html"
-}
-function cancelEdit(){
-    window.location.href="manages_user.html"
-}
-
-function userEdit(){
-    window.location.href="user_edit.html"
+function adminEdit(){
+    window.location.href="admin_edit.html"
 }
 
 function loadType() {
@@ -102,14 +95,14 @@ function loadFormat() {
     
   }
 
-function cleans(){
-    window.location.href="/provides.html"
+function scientistClean(){
+    window.location.href="/stakeholder_provide.html"
 }
 
 function extractSummary(){
-    window.location.href="/extracts_summary.html"
+    window.location.href="/extract_summary.html"
 }
 
-function updateNext(){
-    window.location.href="solution_update.html"
+function createSolution(){
+    window.location.href="create_solution.html"
 }

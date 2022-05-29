@@ -1,0 +1,113 @@
+:root {
+    --color-text: #414346;
+    --color-bar:#9b8f8f;
+    --first: #112031;
+    --second: #152d35;
+    --third: #345b63;
+    --fourth: #d4ecdd;
+}
+form.general{
+    margin: 3% 37.5%;
+    width: 30%;
+    padding: 20px 0;
+    box-shadow: 2px 2px 6px 0 var(--first);
+    border-radius: 10px;
+    background: white;
+}
+input.general{
+    border: none;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1.2px solid var(--color-bar);
+    width: 100%;
+    display: block;
+    font-size: 16px;
+
+}
+input.description{
+    width: 100%;
+    height: 60px;
+    margin-top: 1rem;
+}
+input.description:focus{
+    outline: none;
+}
+input.general:focus{
+    outline: none;
+}
+input.file[type="file"]{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, var(--fourth), var(--second));
+    transition: 0.3s ease width;
+    left: 0px;
+}
+
+input:focus~.bar::before{
+    width: 100%;
+}
+form .group{
+    margin: 20px;
+}
+div.button-form{
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+div.validity{
+    display: flex;
+    justify-content: space-around;
+}
+button.general{
+    font-family: 'roboto';
+    width: 40%;
+    background: var(--third);  /* fallback for old browsers */
+    border: none;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#upload{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+button.upload:hover{
+    background: white;
+    color: black;
+    transition: 0.3s ease-in-out all;
+}
+
+button.general:hover{
+    background: white;
+    color: black;
+    transition: 0.3s ease-in-out all;
+}
+h1.form-title{
+    text-transform: capitalize;
+}
+select.general{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+}

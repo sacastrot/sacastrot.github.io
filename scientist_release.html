@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,32 @@
     <link rel="stylesheet" href="form_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-    <title>Application Create</title>
+    <title>RELEASES RESULT</title>
 </head>
+
 <body>
+
     <nav class="navbar">
         <a href="/">Data Scientist</a>
     </nav>
-    <form method="post" id="form" class="general">
+
+    <form action="" method="post" id="form" class="general">
         <div class="form">
-            <h1 class="form-title">application create</h1>
-            <div class="group">
-                <label for="">Tool</label>
-                <input type="text" class="general"><span class="bar"></span>
+            <h1 class="form-title">release result</h2>
+            <div class="group" id="upload">
+                <input type="file" class="file">
             </div>
             <div class="group">
-                <label for="">Version control System</label>
+                <label>Type</label>
                 <input type="text" class="general"><span class="bar"></span>
             </div>
-        </div>
         </div>
         <div class="button-form">
             <button type="button" class="general" onclick="index()">Accept</button>
             <button type="button" class="general" onclick="index()">Cancel</button>
         </div>
     </form>
+
 </body>
+
 </html>
