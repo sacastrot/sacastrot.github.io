@@ -1,0 +1,10 @@
+.selectable {
+    cursor: pointer;
+}
+.cantOpen{
+    cursor: not-allowed;
+}
+
+.cantOpen:hover{
+    fill: #CCCCAB;
+}
