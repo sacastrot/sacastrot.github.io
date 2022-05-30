@@ -32,6 +32,7 @@ $(document).ready(function () {
         "userRequirement",
         "result",
         "feedback",
+        "enhancingPerformance",
     ];
     const objects = { 
         admin: { link: 'admin.html', canOpen: () => true, failAction: () => alert('admin')}, 
@@ -63,7 +64,8 @@ $(document).ready(function () {
         project: { link: 'project.html', canOpen: () => true, failAction: () => alert('project')}, 
         userRequirement: { link: 'user_requirement.html', canOpen: () => true, failAction: () => alert('user_requirement')}, 
         result: { link: 'result.html', canOpen: () => true, failAction: () => alert('result')}, 
-        feedback: { link: 'feedback.html', canOpen: () => true, failAction: () => alert('feedback')}, }
+        feedback: { link: 'feedback.html', canOpen: () => true, failAction: () => alert('feedback')}, 
+        enhancingPerformance: { link: 'enhancing_performance.html', canOpen: () => true, failAction: () => alert('enhancing_performance')}}
 
     ids.forEach(id => {
         const element = $("#" +id); //Equivale a document.getElementById
