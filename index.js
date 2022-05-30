@@ -33,39 +33,194 @@ $(document).ready(function () {
         "result",
         "feedback",
         "enhancingPerformance",
+        "obtainingTypeOfModel",
+        "ensuring_project_has_data",
+        "increasing_quality_of_data",
+        "fostering_data_has_summary",
+        "achieving_the_result"
     ];
-    const objects = { 
-        admin: { link: 'admin.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        adminTxt: { link: 'admin.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminCreate: { link: 'admin_create.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminCreateTxt: { link: 'admin_create.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminEdit: { link: 'admin_manages.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminEditTxt: { link: 'admin_manages.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminDelete: { link: 'admin_manages.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        rdAdminDeleteTxt: { link: 'admin_manages.html', canOpen: () => true, failAction: () => alert('admin')}, 
-        user:{ link: 'user.html', canOpen: () => true, failAction: () => alert('user')}, 
-        userTxt:{ link: 'user.html', canOpen: () => true, failAction: () => alert('user')}, 
-        employee:{ link: 'employee.html', canOpen: () => true, failAction: () => alert('employee')}, 
-        employeeTxt:{ link: 'employee.html', canOpen: () => true, failAction: () => alert('employee')}, 
-        stakeholder:{ link: 'stakeholder.html', canOpen: () => true, failAction: () => alert('stakeholder')}, 
-        rdStakeholderProvide:{ link: 'stakeholder_provide.html', canOpen: () => true, failAction: () => alert('stakeholder')}, 
-        scientist: { link: 'scientist.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistClean: { link: 'scientist_clean.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistExtract: { link: 'scientist_extract.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistDetermine: { link: 'scientist_determine.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistBuild: { link: 'scientist_build1.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistUpdate: { link: 'scientist_update1.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        rdScientistRelease: { link: 'scientist_release.html', canOpen: () => true, failAction: () => alert('scientist')}, 
-        data: { link: 'data.html', canOpen: () => true, failAction: () => alert('data')}, 
-        summary: { link: 'summary.html', canOpen: () => true, failAction: () => alert('summary')}, 
-        solution: { link: 'solution.html', canOpen: () => true, failAction: () => alert('solution')}, 
-        application: { link: 'application.html', canOpen: () => true, failAction: () => alert('application')}, 
-        model: { link: 'model.html', canOpen: () => true, failAction: () => alert('model')}, 
-        project: { link: 'project.html', canOpen: () => true, failAction: () => alert('project')}, 
-        userRequirement: { link: 'user_requirement.html', canOpen: () => true, failAction: () => alert('user_requirement')}, 
-        result: { link: 'result.html', canOpen: () => true, failAction: () => alert('result')}, 
-        feedback: { link: 'feedback.html', canOpen: () => true, failAction: () => alert('feedback')}, 
-        enhancingPerformance: { link: 'enhancing_performance.html', canOpen: () => true, failAction: () => alert('enhancing_performance')}}
+    const objects = {
+        admin: {
+            link: "admin.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        adminTxt: {
+            link: "admin.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminCreate: {
+            link: "admin_create.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminCreateTxt: {
+            link: "admin_create.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminEdit: {
+            link: "admin_manages.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminEditTxt: {
+            link: "admin_manages.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminDelete: {
+            link: "admin_manages.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        rdAdminDeleteTxt: {
+            link: "admin_manages.html",
+            canOpen: () => true,
+            failAction: () => alert("admin"),
+        },
+        user: {
+            link: "user.html",
+            canOpen: () => true,
+            failAction: () => alert("user"),
+        },
+        userTxt: {
+            link: "user.html",
+            canOpen: () => true,
+            failAction: () => alert("user"),
+        },
+        employee: {
+            link: "employee.html",
+            canOpen: () => true,
+            failAction: () => alert("employee"),
+        },
+        employeeTxt: {
+            link: "employee.html",
+            canOpen: () => true,
+            failAction: () => alert("employee"),
+        },
+        stakeholder: {
+            link: "stakeholder.html",
+            canOpen: () => true,
+            failAction: () => alert("stakeholder"),
+        },
+        rdStakeholderProvide: {
+            link: "stakeholder_provide.html",
+            canOpen: () => true,
+            failAction: () => alert("stakeholder"),
+        },
+        scientist: {
+            link: "scientist.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistClean: {
+            link: "scientist_clean.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistExtract: {
+            link: "scientist_extract.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistDetermine: {
+            link: "scientist_determine.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistBuild: {
+            link: "scientist_build1.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistUpdate: {
+            link: "scientist_update1.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        rdScientistRelease: {
+            link: "scientist_release.html",
+            canOpen: () => true,
+            failAction: () => alert("scientist"),
+        },
+        data: {
+            link: "data.html",
+            canOpen: () => true,
+            failAction: () => alert("data"),
+        },
+        summary: {
+            link: "summary.html",
+            canOpen: () => true,
+            failAction: () => alert("summary"),
+        },
+        solution: {
+            link: "solution.html",
+            canOpen: () => true,
+            failAction: () => alert("solution"),
+        },
+        application: {
+            link: "application.html",
+            canOpen: () => true,
+            failAction: () => alert("application"),
+        },
+        model: {
+            link: "model.html",
+            canOpen: () => true,
+            failAction: () => alert("model"),
+        },
+        project: {
+            link: "project.html",
+            canOpen: () => true,
+            failAction: () => alert("project"),
+        },
+        userRequirement: {
+            link: "user_requirement.html",
+            canOpen: () => true,
+            failAction: () => alert("user_requirement"),
+        },
+        result: {
+            link: "result.html",
+            canOpen: () => true,
+            failAction: () => alert("result"),
+        },
+        feedback: {
+            link: "feedback.html",
+            canOpen: () => true,
+            failAction: () => alert("feedback"),
+        },
+        enhancingPerformance: {
+            link: "enhancing_performance.html",
+            canOpen: () => true,
+            failAction: () => alert("enhancing_performance"),
+        },
+        obtainingTypeOfModel: {
+            link: "obtaining_type_model.html",
+            canOpen: () => true,
+            failAction: () => alert("obtaining_type_model "),
+        },
+        ensuring_project_has_data: {
+            link: "ensuring_project_has_data.html",
+            canOpen: () => true,
+            failAction: () => alert("ensuring_project_has_data "),
+        },
+        increasing_quality_of_data: {
+            link: "increasing_quality.html",
+            canOpen: () => true,
+            failAction: () => alert("increasing_quality "),
+        },
+        fostering_data_has_summary: {
+            link: "fostering_summary.html",
+            canOpen: () => true,
+            failAction: () => alert("fostering_summary "),
+        },
+        achieving_the_result: {
+            link: "achieving_result.html",
+            canOpen: () => true,
+            failAction: () => alert("achieving_result"),
+        },
+    };
 
     ids.forEach(id => {
         const element = $("#" +id); //Equivale a document.getElementById
