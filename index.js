@@ -37,7 +37,12 @@ $(document).ready(function () {
         "ensuring_project_has_data",
         "increasing_quality_of_data",
         "fostering_data_has_summary",
-        "achieving_the_result"
+        "achieving_the_result",
+        "forestingFeedback",
+        "accomplishingApplicationSolution",
+        "conservingTheEndDate",
+        "controllingTheStatus",
+        "mantainingTheUsers"
     ];
     const objects = {
         admin: {
@@ -219,6 +224,31 @@ $(document).ready(function () {
             link: "achieving_result.html",
             canOpen: () => true,
             failAction: () => alert("achieving_result"),
+        },
+        forestingFeedback : {
+            link: "achieving_result.html",
+            canOpen: () => true,
+            failAction: () => alert("achieving_result"),
+        },
+        accomplishingApplicationSolution :  {
+            link: "average_performance.html",
+            canOpen: () => true,
+            failAction: () => alert("average_performance"),
+        },
+        conservingTheEndDate:{
+            link: "average_project_duration.html",
+            canOpen: () => true,
+            failAction: () => alert("average_project_duration"),
+        },
+        controllingTheStatus:{
+            link: "average_project_duration.html",
+            canOpen: () => true,
+            failAction: () => alert("average_project_duration"),
+        },
+        mantainingTheUsers :{
+            link: "user_creation_speed.html",
+            canOpen: () => true,
+            failAction: () => alert("user_creation_speed"),
         },
     };
 
