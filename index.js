@@ -11,15 +11,15 @@ $(document).ready(function () {
     var numValidate = getRandomInt(1,20);
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
-    }
-    if(numValidate<10){
-        existUsers = true;
-        alert("A user arrived!!!");
-    }else{
-        existUsers = false;
-        alert("No user has arrived");
-    }
-    evaluateClass();
+        }
+        if(numValidate<10){
+            existUsers = true;
+            alert("A user arrived!!!");
+        }else{
+            existUsers = false;
+            alert("No user has arrived");
+        }
+        evaluateClass();
     }
     function userRoleManages(){
         if(userRoleAdmin){
@@ -34,7 +34,7 @@ $(document).ready(function () {
     function userRolePreProcess(){
         if(userRoleScientist){
             userRoleScientist = false;
-            alert("Los Data Scientist permissions")
+            alert("Lose Data Scientist permissions")
         }else{
             userRoleScientist = true;
             alert("He is now a Data Scientist")
@@ -183,7 +183,7 @@ $(document).ready(function () {
         "eventUserRoleManages",
         "eventUserRoleStakeholder",
         "eventStakeholder",
-        "eventSummary",
+        "eventSummaryProvide",
         "eventUserRolePreProcess",
         "eventDataQuality",
         "eventDataQuality2",
@@ -452,7 +452,7 @@ $(document).ready(function () {
             canOpen: () => true,
             doAction: () => randomAction(),
         },
-        eventSummary:{
+        eventSummaryProvide:{
             canOpen: () => true,
             doAction: () => summaryValidity(),
         },
