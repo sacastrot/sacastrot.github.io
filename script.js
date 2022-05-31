@@ -69,11 +69,11 @@ function loadFormat() {
   }
 
 function scientistClean(){
-    window.location.href="/stakeholder_provide.html"
+    window.location.href="stakeholder_provide.html"
 }
 
 function extractSummary(){
-    window.location.href="/extract_summary.html"
+    window.location.href="extract_summary.html"
 }
 
 function createSolution(){
