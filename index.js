@@ -341,7 +341,7 @@ $(document).ready(function () {
             failAction: () => alert("result"),
         },
         feedback: {
-            link: "feedback.html",
+            link: "Feedback.html",
             canOpen: () => true,
             failAction: () => alert("feedback"),
         },
