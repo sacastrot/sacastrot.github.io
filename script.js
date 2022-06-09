@@ -1,8 +1,71 @@
- var event1 = false;
+var event1 = false;
+ // almacena el acceso a indexedDB
+const indexedDB = window.indexedDB;
+// preguntamos si existe
+if(indexedDB){
+    let db;
+    const request = indexedDB.open('betaDB',1) //El segundo numero es la version del a bd
+    // usamos metodos asincronos
+
+    //Aca abre la BD
+    request.onsuccess = ()=>{
+        db = request.result;
+        console.log('OPEN',db);
+    }
+    //Este metodo es el primero que se ejecuta
+    request.onupgradeneeded = ()=>{
+        db = request.result;
+        console.log('CREATE',db);
+        // En este punto se crea el almacen
+        const objectStore = db.createObjectStore('users',{keyPath: 'identification'});
+    }
+    request.onerror = (error)=>{
+        console.log('Error',error)
+    }
+
+    function addData(store, data){
+        const transaction = db.transaction([store], 'readwrite');
+        const objectStore = transaction.objectStore(store);
+        const request = objectStore.add(data);
+        console.log(request)
+    }
+    function fillUsers(store, idBody, role){
+        const transaction = db.transaction([store]);
+        const objectStore = transaction.objectStore(store);
+        const request = objectStore.openCursor();
+        request.onsuccess = (e) =>{
+            const cursor = e.target.result;
+            if (cursor){
+                if(cursor.value.role == role || role == 'users'){
+                    $('#'+idBody).append(
+                        '<tr><td>' + cursor.value.identification + 
+                        '</td><td>' + cursor.value.name + 
+                        '</td><td>' + cursor.value.password + 
+                        '</td><td>' + cursor.value.email + 
+                        '</td><td>' + cursor.value.role + '</td></tr>'
+                    )
+                }
+                cursor.continue();
+            }else{
+                
+            }
+        }
+    }
+}
+
+function formData(selectId){
+    var formValues = {};
+    $('input').each(function () {
+     formValues[this.name] = this.value;
+    });
+    formValues['role'] =  $("#"+selectId).val()
+    console.log(formValues);
+    addData('users',formValues);
+}
 
  function validateEvent(){
     if(event1){
-        window.location.href="/create.html";
+        window.location.href="create.html";
     }else{
         alert('Invalidate option');
     }
@@ -16,6 +79,7 @@ function pointer(){
 function index(){
     window.location.href="index.html"
 }
+
 
 scientistBuild2 = ()=>{
     window.location.href = "scientist_build2.html"
@@ -79,3 +143,4 @@ function extractSummary(){
 function createSolution(){
     window.location.href="create_solution.html"
 }
+

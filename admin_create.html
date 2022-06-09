@@ -7,45 +7,47 @@
     <link rel="stylesheet" href="general_styles.css">
     <link rel="stylesheet" href="form_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <title>Create User</title>
 </head>
 <body>
     <nav class="navbar">
         <a href="/index.html">Data Scientist</a>
     </nav>
-    <form method="post" id="form" class="general">
+    <form method="post" id="formCreate" class="general">
         <div class="form">
             <h1 class="form-title">Create User</h1>
             <div class="group">
                 <label for="">Identification</label>
-                <input type="text" class="general"><span class="bar"></span>
+                <input type="text" name="identification" class="general"><span class="bar"></span>
             </div>
             <div class="group">
                 <label for="">Name</label>
-                <input type="text" class="general"><span class="bar"></span>
+                <input type="text" name="name" class="general"><span class="bar"></span>
             </div>
             <div class="group">
                 <label for="">Password</label>
-                <input type="password" class="general"><span class="bar"></span>
+                <input type="password" name="password" class="general"><span class="bar"></span>
             </div>
             <div class="group">
                 <label for="">Email</label>
-                <input type="text" class="general"><span class="bar"></span>
+                <input type="text" name="email" class="general"><span class="bar"></span>
             </div>
             <div class="group">
                 <label for="">Role</label>
-                <select class="general">
-                    <option value="">ADMINISTRATOR</option>
-                    <option value="">DATA SCIENTIST</option>
-                    <option value="">STAKEHOLDER</option>
+                <select name="role" class="general" id="roleUser">
+                    <option value="" disabled selected>Select Role ...</option>
+                    <option value="ADMINISTRATOR">ADMINISTRATOR</option>
+                    <option value="DATA SCIENTIST">DATA SCIENTIST</option>
+                    <option value="STAKEHOLDER">STAKEHOLDER</option>
                 </select>
             </div>
         </div>
         <div class="button-form">
-            <button type="button" class="general" onclick="index()">Create</button>
+            <button type="button" class="general" onclick="formData('roleUser');">Create</button>
             <button type="button" class="general" onclick="index()">Cancel</button>
         </div>
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
