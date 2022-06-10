@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general_styles.css">
+    <link rel="stylesheet" href="form_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Provide Data</title>
+</head>
+<body onload="loadType()">
+    <nav class="navbar">
+        <a href="index.html">Data Scientist</a>
+    </nav>
+    <form method="post" id="form" class="general">
+        <div class="form">
+            <h1 class="form-title">Provide Data</h1>
+            <div class="group">
+                <label for="">Name</label>
+                <input type="text" class="general"><span class="bar"></span>
+            </div>
+            <div class="group" id="upload">
+                <input type="file" class="file">
+            </div>
+            <div class="group">
+                <label for="">Type</label>
+                <select name="type" id="type" class="general" onchange="loadFormat()">
+                    <option value="Select type ...">Select type ...</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="">Classification</label>
+                <select name="" id="" class="general">
+                    <option value="">DETERMINISTIC</option>
+                    <option value="">PROBABILISTIC</option>
+                </select>
+            </div>
+            <div class="group">
+                <label>Description</label>
+                <input type="text" name="" id="email" class="description">
+            </div>
+            <div class="group">
+                <span>Format</span>
+                <select name="format" id="format" class="general">
+                    <option value="">Select format ...</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-form">
+            <button type="button" class="general" onclick="index()">Provide</button>
+            <button type="button" class="general" onclick="index()">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
