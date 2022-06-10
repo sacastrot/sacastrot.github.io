@@ -82,16 +82,16 @@ function index(){
 
 
 scientistBuild2 = ()=>{
-    window.location.href = "dinamyc_relationships/formularies/builds_application_2_select_model.html"
+    window.location.href = "builds_application_2_select_model.html"
 }
 scientistUpdate2= ()=>{
-    window.location.href = "dinamyc_relationships/formularies/updates_model_2_select_application.html"
+    window.location.href = "updates_model_2_select_application.html"
 }
 applicationCreate = ()=>{
-    window.location.href = "dinamyc_relationships/formularies/builds_application_3_create_application.html"
+    window.location.href = "builds_application_3_create_application.html"
 }
 function adminEdit(){
-    window.location.href="dinamyc_relationships/formularies/edits_user.html"
+    window.location.href="edits_user.html"
 }
 
 function loadType() {
@@ -133,14 +133,14 @@ function loadFormat() {
   }
 
 function scientistClean(){
-    window.location.href="dinamyc_relationships/formularies/provides_data.html"
+    window.location.href="provides_data.html"
 }
 
 function extractSummary(){
-    window.location.href="dinamyc_relationships/formularies/extracts_summary_2.html"
+    window.location.href="extracts_summary_2.html"
 }
 
 function createSolution(){
-    window.location.href="dinamyc_relationships/formularies/updates_model_3_create_solution.html"
+    window.location.href="updates_model_3_create_solution.html"
 }
 
