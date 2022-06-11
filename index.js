@@ -132,27 +132,27 @@ $(document).ready(function () {
         evaluateClass();
     }
     const ids = [
-        "admin",
-        "adminTxt",
-        "rdAdminCreate",
-        "rdAdminCreateTxt",
-        "rdAdminEdit",
-        "rdAdminEditTxt",
-        "rdAdminDelete",
-        "rdAdminDeleteTxt",
+        "administrator",
+        "administratorTxt",
+        "createsUser",
+        "createsUserTxt",
+        "editsUser",
+        "editsUserTxt",
+        "deletesUser",
+        "deletesUserTxt",
         "user",
         "userTxt",
         "employee",
         "employeeTxt",
         "stakeholder",
-        "rdStakeholderProvide",
-        "scientist",
-        "rdScientistClean",
-        "rdScientistExtract",
-        "rdScientistDetermine",
-        "rdScientistBuild",
-        "rdScientistUpdate",
-        "rdScientistRelease",
+        "providesData",
+        "dataScientist",
+        "cleansData",
+        "extractsSummary",
+        "determinesModel",
+        "buildsApplication",
+        "updatesModel",
+        "releasesResult",
         "data",
         "summary",
         "solution",
@@ -164,10 +164,10 @@ $(document).ready(function () {
         "feedback",
         "enhancingPerformance",
         "obtainingTypeOfModel",
-        "ensuring_project_has_data",
-        "increasing_quality_of_data",
-        "fostering_data_has_summary",
-        "achieving_the_result",
+        "ensuringProjectHasData",
+        "increasingQualityOfData",
+        "fosteringDataHasSummary",
+        "achievingTheResult",
         "forestingFeedback",
         "accomplishingApplicationSolution",
         "conservingTheEndDate",
@@ -195,208 +195,208 @@ $(document).ready(function () {
         "eventUserRelease",
     ];
     const objects = {
-        admin: {
-            link: "administrator.html",
+        administrator: {
+            link: "class_concepts/administrator.html",
             canOpen: () => true,
             failAction: () => alert("admin"),
         },
-        adminTxt: {
-            link: "administrator.html",
+        administratorTxt: {
+            link: "class_concepts/administrator.html",
             canOpen: () => true,
             failAction: () => alert("admin"),
         },
-        rdAdminCreate: {
-            link: "creates_user.html",
+        createsUser: {
+            link: "dynamic_relationships/creates_user.html",
             canOpen: () => existUsers,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdAdminCreateTxt: {
-            link: "creates_user.html",
+        createsUserTxt: {
+            link: "dynamic_relationships/creates_user.html",
             canOpen: () => existUsers && userRoleAdmin,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdAdminEdit: {
-            link: "manages_user.html",
+        editsUser: {
+            link: "dynamic_relationships/manages_user.html",
             canOpen: () => userRoleAdmin,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdAdminEditTxt: {
-            link: "manages_user.html",
+        editsUserTxt: {
+            link: "dynamic_relationships/manages_user.html",
             canOpen: () => userRoleAdmin,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdAdminDelete: {
-            link: "manages_user.html",
+        deletesUser: {
+            link: "dynamic_relationships/manages_user.html",
             canOpen: () => userRoleAdmin,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdAdminDeleteTxt: {
-            link: "manages_user.html",
+        deletesUserTxt: {
+            link: "dynamic_relationships/manages_user.html",
             canOpen: () => userRoleAdmin,
             failAction: () => alert("At least one condition is not met"),
         },
         user: {
-            link: "user.html",
+            link: "class_concepts/user.html",
             canOpen: () => true,
             failAction: () => alert("user"),
         },
         userTxt: {
-            link: "user.html",
+            link: "class_concepts/user.html",
             canOpen: () => true,
             failAction: () => alert("user"),
         },
         employee: {
-            link: "employee.html",
+            link: "class_concepts/employee.html",
             canOpen: () => true,
             failAction: () => alert("employee"),
         },
         employeeTxt: {
-            link: "employee.html",
+            link: "class_concepts/employee.html",
             canOpen: () => true,
             failAction: () => alert("employee"),
         },
         stakeholder: {
-            link: "stakeholder.html",
+            link: "class_concepts/stakeholder.html",
             canOpen: () => true,
             failAction: () => alert("stakeholder"),
         },
-        rdStakeholderProvide: {
-            link: "provides_data.html",
+        providesData: {
+            link: "dynamic_relationships/provides_data.html",
             canOpen: () => (userRoleStakeholder && existUsers) || (userRoleStakeholder && validitySummary),
             failAction: () => alert("At least one condition is not met"),
         },
-        scientist: {
-            link: "data_scientist.html",
+        dataScientist: {
+            link: "class_concepts/data_scientist.html",
             canOpen: () => true,
             failAction: () => alert("scientist"),
         },
-        rdScientistClean: {
-            link: "cleans_data.html",
+        cleansData: {
+            link: "dynamic_relationships/cleans_data.html",
             canOpen: () => userRoleScientist && (!dataQuality) && projectStatus,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdScientistExtract: {
-            link: "extracts_summary_1.html",
+        extractsSummary: {
+            link: "dynamic_relationships/extracts_summary_1.html",
             canOpen: () => userRoleScientist && dataQuality && projectStatus,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdScientistDetermine: {
-            link: "determines_model.html",
+        determinesModel: {
+            link: "dynamic_relationships/determines_model.html",
             canOpen: () => userRoleScientist && validitySummary,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdScientistBuild: {
-            link: "builds_application_1_select_data.html",
+        buildsApplication: {
+            link: "dynamic_relationships/builds_application_1_select_data.html",
             canOpen: () => userRoleScientist,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdScientistUpdate: {
-            link: "updates_model_1_select_model.html",
+        updatesModel: {
+            link: "dynamic_relationships/updates_model_1_select_model.html",
             canOpen: () => userRoleScientist && projectValidation,
             failAction: () => alert("At least one condition is not met"),
         },
-        rdScientistRelease: {
-            link: "releases_result.html",
+        releasesResult: {
+            link: "dynamic_relationships/releases_result.html",
             canOpen: () => userRoleScientist && projectValidation,
             failAction: () => alert("At least one condition is not met"),
         },
         data: {
-            link: "data.html",
+            link: "class_concepts/data.html",
             canOpen: () => true,
             failAction: () => alert("data"),
         },
         summary: {
-            link: "summary.html",
+            link: "class_concepts/summary.html",
             canOpen: () => true,
             failAction: () => alert("summary"),
         },
         solution: {
-            link: "solution.html",
+            link: "class_concepts/solution.html",
             canOpen: () => true,
             failAction: () => alert("solution"),
         },
         application: {
-            link: "application.html",
+            link: "class_concepts/application.html",
             canOpen: () => true,
             failAction: () => alert("application"),
         },
         model: {
-            link: "model.html",
+            link: "class_concepts/model.html",
             canOpen: () => true,
             failAction: () => alert("model"),
         },
         project: {
-            link: "project.html",
+            link: "class_concepts/project.html",
             canOpen: () => true,
             failAction: () => alert("project"),
         },
         userRequirement: {
-            link: "user_requirement.html",
+            link: "class_concepts/user_requirement.html",
             canOpen: () => true,
             failAction: () => alert("user_requirement"),
         },
         result: {
-            link: "result.html",
+            link: "class_concepts/result.html",
             canOpen: () => true,
             failAction: () => alert("result"),
         },
         feedback: {
-            link: "feedback.html",
+            link: "class_concepts/feedback.html",
             canOpen: () => true,
             failAction: () => alert("feedback"),
         },
         enhancingPerformance: {
-            link: "enhancing_performance.html",
+            link: "goals/enhancing_performance.html",
             canOpen: () => true,
             failAction: () => alert("enhancing_performance"),
         },
         obtainingTypeOfModel: {
-            link: "obtaining_type_model.html",
+            link: "goals/obtaining_type_model.html",
             canOpen: () => true,
             failAction: () => alert("obtaining_type_model "),
         },
-        ensuring_project_has_data: {
-            link: "ensuring_project_has_data.html",
+        ensuringProjectHasData: {
+            link: "goals/ensuring_project_has_data.html",
             canOpen: () => true,
             failAction: () => alert("ensuring_project_has_data "),
         },
-        increasing_quality_of_data: {
-            link: "increasing_quality.html",
+        increasingQualityOfData: {
+            link: "goals/increasing_quality.html",
             canOpen: () => true,
             failAction: () => alert("increasing_quality "),
         },
-        fostering_data_has_summary: {
-            link: "fostering_summary.html",
+        fosteringDataHasSummary: {
+            link: "goals/fostering_summary.html",
             canOpen: () => true,
             failAction: () => alert("fostering_summary "),
         },
-        achieving_the_result: {
-            link: "achieving_result.html",
+        achievingTheResult: {
+            link: "goals/achieving_result.html",
             canOpen: () => true,
             failAction: () => alert("achieving_result"),
         },
         forestingFeedback : {
-            link: "achieving_result.html",
+            link: "goals/achieving_result.html",
             canOpen: () => true,
             failAction: () => alert("achieving_result"),
         },
         accomplishingApplicationSolution :  {
-            link: "accomplishing_application_has_solution.html",
+            link: "goals/accomplishing_application_has_solution.html",
             canOpen: () => true,
             failAction: () => alert("average_performance"),
         },
         conservingTheEndDate:{
-            link: "controlling_status_conserving_end_date.html",
+            link: "goals/controlling_status_conserving_end_date.html",
             canOpen: () => true,
             failAction: () => alert("average_project_duration"),
         },
         controllingTheStatus:{
-            link: "controlling_status_conserving_end_date.html",
+            link: "goals/controlling_status_conserving_end_date.html",
             canOpen: () => true,
             failAction: () => alert("average_project_duration"),
         },
         mantainingTheUsers:{
-            link: "maintaining_users.html",
+            link: "goals/maintaining_users.html",
             canOpen: () => true,
             failAction: () => alert("user_creation_speed"),
         },
