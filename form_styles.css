@@ -6,13 +6,28 @@
     --third: #345b63;
     --fourth: #d4ecdd;
 }
+
+div.content-form{
+    display: flex;
+    justify-content: center;
+}
 form.general{
-    margin: 3% 37.5%;
+    margin-top: 3%;
     width: 30%;
     padding: 20px 0;
     box-shadow: 2px 2px 6px 0 var(--first);
     border-radius: 10px;
     background: white;
+}
+div.form{
+    display: flex;
+    justify-content: space-between;
+}
+div.data-scientist{
+    display: none;
+}
+div.general-user{
+    width: 100%;
 }
 input.general{
     border: none;

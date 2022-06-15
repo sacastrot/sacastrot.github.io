@@ -1,7 +1,23 @@
 var event1 = false;
  // almacena el acceso a indexedDB
 const indexedDB = window.indexedDB;
-// preguntamos si existe
+/*
+    * * Se definiran arreglos con los ids de los inputs que seran capturados para escribir en la BD
+*/
+let instances;
+var idsUser = [
+    'idUser',
+    'nameUser',
+    'passwordUser',
+    'emailUser',
+    'roleUser',
+]
+var idsScientist = [
+    'jobScientist',
+    'experienceScientist',
+    'backgroundScientist',
+    "styleScientist"
+]
 if(indexedDB){
     let db;
     const request = indexedDB.open('betaDB',1) //El segundo numero es la version del a bd
@@ -10,7 +26,7 @@ if(indexedDB){
     //Aca abre la BD
     request.onsuccess = ()=>{
         db = request.result;
-        console.log('OPEN',db);
+        //console.log('OPEN',db);
     }
     //Este metodo es el primero que se ejecuta
     request.onupgradeneeded = ()=>{
@@ -24,12 +40,22 @@ if(indexedDB){
     }
 
     function addData(store, data){
+        let size;
         const transaction = db.transaction([store], 'readwrite');
         const objectStore = transaction.objectStore(store);
-        const request = objectStore.add(data);
-        console.log(request)
+        const request = objectStore.add(data)
+        request.onsuccess = function(e){
+            if(e.target.onsuccess.length>0){
+                window.alert('User created successfully');
+                window.location.href="../index.html";
+            }
+        }
+        request.onerror = function(e){
+            window.alert(e.target.error.message);
+        }
+
     }
-    function fillUsers(store, idBody, role){
+    function fillUsers(store,idBody, role){
         const transaction = db.transaction([store]);
         const objectStore = transaction.objectStore(store);
         const request = objectStore.openCursor();
@@ -38,7 +64,8 @@ if(indexedDB){
             if (cursor){
                 if(cursor.value.role == role || role == 'users'){
                     $('#'+idBody).append(
-                        '<tr><td>' + cursor.value.identification + 
+                        `<tr><td><input type="radio" name="select" value = ${cursor.value.identification}>` +
+                        '</td><td>' + cursor.value.identification + 
                         '</td><td>' + cursor.value.name + 
                         '</td><td>' + cursor.value.password + 
                         '</td><td>' + cursor.value.email + 
@@ -51,19 +78,55 @@ if(indexedDB){
             }
         }
     }
+    function size(store,action){
+        const transaction = db.transaction([store]);
+        const objectStore = transaction.objectStore(store);
+        objectStore.getAll().onsuccess = function(event){
+            let request = event.target;
+            instances =  request.result.length;
+        }
+
+    }
+    function formData(action){
+        var formValues = {};
+        if(action == "createUser"){
+            idsUser.forEach(function(id){
+                let name = $("#"+id).attr('name');
+                let value = $("#"+id).val();
+                if(name == "password"){
+                    value = CryptoJS.MD5(value);
+                }
+                formValues[name]=value;
+            })
+            let role = $("#"+idsUser[idsUser.length - 1]).val();
+            if(role=="DATA SCIENTIST"){
+                idsScientist.forEach(function(id){
+                    let name = $("#"+id).attr('name');
+                    let value = $("#"+id).val();
+                    formValues[name]=value;
+                })
+            }
+        }
+        addData('users',formValues);
+    }
+
+
 }
 
-function formData(selectId){
-    var formValues = {};
-    $('input').each(function () {
-     formValues[this.name] = this.value;
-    });
-    formValues['role'] =  $("#"+selectId).val()
-    console.log(formValues);
-    addData('users',formValues);
+function appearScientist(){
+    if($('#roleUser').val() == 'DATA SCIENTIST'){
+        $('#formCreate').css("width","70%");
+        $('.general-user').css("width","50%")
+        $('.data-scientist').css("display","block");
+        $('.data-scientist').css("width","50%");
+    } else {
+        $('#formCreate').css("width","30%");
+        $('.general-user').css("width","100%")
+        $('.data-scientist').css("display","none");
+        $('.data-scientist').css("width","50%");
+    }
 }
-
- function validateEvent(){
+function validateEvent(){
     if(event1){
         window.location.href="create.html";
     }else{

@@ -13,41 +13,71 @@
     <nav class="navbar">
         <a href="../index.html">Data Scientist</a>
     </nav>
-    <form method="post" id="formCreate" class="general">
-        <div class="form">
+    <div class="content-form">
+        <form method="post" id="formCreate" class="general">
             <h1 class="form-title">Create User</h1>
-            <div class="group">
-                <label for="">Identification</label>
-                <input type="text" name="identification" class="general"><span class="bar"></span>
+            <div class="form">
+                <div class="general-user">
+                    <div class="group">
+                        <label for="">Identification</label>
+                        <input type="text" name="identification" class="general" id="idUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" class="general" id="nameUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Password</label>
+                        <input type="password" name="password" class="general" id="passwordUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Email</label>
+                        <input type="text" name="email" class="general" id="emailUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Role</label>
+                        <select name="role" class="general" id="roleUser" onchange="appearScientist()">
+                            <option value="" disabled selected>Select Role ...</option>
+                            <option value="ADMINISTRATOR">ADMINISTRATOR</option>
+                            <option value="DATA SCIENTIST">DATA SCIENTIST</option>
+                            <option value="STAKEHOLDER">STAKEHOLDER</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="data-scientist">
+                    <div class="group">
+                        <label  for="">Job Title</label>
+                        <input  type="text" name="job" class="general" id="jobScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Experience</label>
+                        <input  type="text" name="experience" class="general" id="experienceScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Background</label>
+                        <input  type="text" name="background" class="general" id="backgroundScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Style</label>
+                        <select  name="sytle" class="general" id="styleScientist">
+                            <option value="" disabled selected>Select Style ...</option>
+                            <option value="INSIGHT PROVIDERS">INSIGHT PROVIDERS</option>
+                            <option value="MODELING SPECIALIST">MODELING SPECIALIST</option>
+                            <option value="PLATFORM BUILDER">PLATFORM BUILDER</option>
+                            <option value="POLYMATH">POLYMATH</option>
+                            <option value="TEAM LEADER">TEAM LEADER</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="group">
-                <label for="">Name</label>
-                <input type="text" name="name" class="general"><span class="bar"></span>
+            <div class="button-form">
+                <button type="button" class="general" onclick="formData('createUser');">Create</button>
+                <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
-            <div class="group">
-                <label for="">Password</label>
-                <input type="password" name="password" class="general"><span class="bar"></span>
-            </div>
-            <div class="group">
-                <label for="">Email</label>
-                <input type="text" name="email" class="general"><span class="bar"></span>
-            </div>
-            <div class="group">
-                <label for="">Role</label>
-                <select name="role" class="general" id="roleUser">
-                    <option value="" disabled selected>Select Role ...</option>
-                    <option value="ADMINISTRATOR">ADMINISTRATOR</option>
-                    <option value="DATA SCIENTIST">DATA SCIENTIST</option>
-                    <option value="STAKEHOLDER">STAKEHOLDER</option>
-                </select>
-            </div>
-        </div>
-        <div class="button-form">
-            <button type="button" class="general" onclick="formData('roleUser');">Create</button>
-            <button type="button" class="general" onclick="index()">Cancel</button>
-        </div>
-    </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        </form>
+    </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../crypto/CryptoJS_v3.1.2/rollups/md5.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>
