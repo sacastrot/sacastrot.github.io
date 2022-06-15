@@ -7,18 +7,26 @@ $(document).ready(function () {
     let dataQuality = false;
     let projectStatus = false; // False no esta en progreso
     let projectValidation = false;
-    function randomAction(){
-    var numValidate = getRandomInt(1,20);
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
-        }
-        if(numValidate<10){
+    function randomAction(mu, sigma){
+
+        if(distribucionNormal(mu, sigma)<0.05){
             existUsers = true;
             alert("A user arrived!!!");
-        }else{
+        }
+        else{
             existUsers = false;
             alert("No user has arrived");
         }
+
+        function distribucionNormal(mu, sigma){
+            var observation = getRandomInt(1,20);
+            return (1/(sigma*Math.sqrt(2*Math.PI)))*Math.exp(-Math.pow((observation-mu),2)/(2*Math.pow(sigma,2)))
+        }
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
         evaluateClass();
     }
     function userRoleManages(){
@@ -402,42 +410,42 @@ $(document).ready(function () {
         },
         eventUser1:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser2:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser3:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser4:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser5:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser6:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser7:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUser8:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
             failAction: () => alert("Evento"),
         },
         eventUserRoleManages:{
@@ -450,7 +458,7 @@ $(document).ready(function () {
         },
         eventStakeholder:{
             canOpen: () => true,
-            doAction: () => randomAction(),
+            doAction: () => randomAction(10, 4),
         },
         eventSummaryProvide:{
             canOpen: () => true,
