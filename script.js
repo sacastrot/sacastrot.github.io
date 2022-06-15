@@ -1,8 +1,12 @@
 var event1 = false;
  // almacena el acceso a indexedDB
 const indexedDB = window.indexedDB;
-/*
-    * * Se definiran arreglos con los ids de los inputs que seran capturados para escribir en la BD
+/**
+ * se definieron dos arreglos que son los inputs que seran escritos en la BD
+ * TODOS: Intentar Login
+ * TODOS: Si no terminar usuarios
+ * TODOS: Si no terminar DATA
+    
 */
 let instances;
 var idsUser = [
