@@ -19,7 +19,7 @@ form.general{
     border-radius: 10px;
     background: white;
 }
-div.form{
+div.form-create-user{
     display: flex;
     justify-content: space-between;
 }

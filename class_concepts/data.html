@@ -18,7 +18,7 @@
     </nav>
     <div class="content-table">
         <h2 class="table-title">Data</h2>
-        <table class="ninefive">
+        <table class="eight">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -34,49 +34,15 @@
                     <th>Quality</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Users data</td>
-                    <td>1.0</td>
-                    <td>user_data.jpg</td>
-                    <td>Unstructured Data</td>
-                    <td>Deterministic</td>
-                    <td>13/04/2021</td>
-                    <td>01/05/2022</td>
-                    <td>This file contains the information about users of Netflix, with diferent atributtes</td>
-                    <td>1.5 GB</td>
-                    <td>Images</td>
-                    <td>Low</td>
-                </tr>
-                <tr>
-                    <td>Iris Data</td>
-                    <td>1.0</td>
-                    <td>iris_data.csv</td>
-                    <td>Structured Data</td>
-                    <td>Deterministic</td>
-                    <td>13/04/2021</td>
-                    <td>01/05/2022</td>
-                    <td>This file contains information about iris flowers an its characteristics</td>
-                    <td>30 MB</td>
-                    <td>Attributes</td>
-                    <td>Low</td>
-                </tr>
-                <tr>
-                    <td>Movies Data</td>
-                    <td>1.0</td>
-                    <td>movies.csv</td>
-                    <td>Structured Data</td>
-                    <td>Probabilistic</td>
-                    <td>13/04/2021</td>
-                    <td>26/05/2022</td>
-                    <td>This file contains information about movies an its characteristics</td>
-                    <td>30 MB</td>
-                    <td>Database</td>
-                    <td>High</td>
-                </tr>
+            <tbody id="infoData">
             </tbody>
         </table>
+        <div class="button-table">
+            <button  class="general" onclick="fillData('infoData','class')">Refresh</button>
+        </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

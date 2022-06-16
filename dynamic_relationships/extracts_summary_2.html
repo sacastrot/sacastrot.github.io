@@ -14,28 +14,30 @@
     <nav class="navbar">
         <a href="../index.html">Data Scientist</a>
     </nav>
-    <form id="form" class="general">
-        <div class="form">
-            <h1 class="form-title">Extract Summary</h1>
-            <div class="group" id="upload">
-                <input type="file" class="file">
-            </div>
-            <div class="group">
-                <label>Description</label>
-                <input type="text" class="description"><span class="bar"></span>
-            </div>
-            <div class="group">
-                <span>Validity</span>
-                <div class="validity">
-                    <label for=""><input type="radio" name="valdity" id=""> Yes</label>
-                    <label for=""><input type="radio" name="valdity" id=""> No</label>
+    <div class="content-form">
+        <form id="form" class="general">
+            <div class="form">
+                <h1 class="form-title">Extract Summary</h1>
+                <div class="group" id="upload">
+                    <input type="file" class="file">
+                </div>
+                <div class="group">
+                    <label>Description</label>
+                    <input type="text" class="description"><span class="bar"></span>
+                </div>
+                <div class="group">
+                    <span>Validity</span>
+                    <div class="validity">
+                        <label for=""><input type="radio" name="valdity" id=""> Yes</label>
+                        <label for=""><input type="radio" name="valdity" id=""> No</label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="button-form">
-            <button type="button" class="general" onclick="index()">Accept</button>
-            <button type="button" class="general" onclick="index()">Cancel</button>
-        </div>
-    </form>
+            <div class="button-form">
+                <button type="button" class="general" onclick="index()">Accept</button>
+                <button type="button" class="general" onclick="index()">Cancel</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

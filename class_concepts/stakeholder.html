@@ -24,19 +24,15 @@
                     <th>Identification</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td class="stakeholder">46745645</td>
-                </tr>
-                <tr>
-                    <td class="stakeholder">23434223</td>
-                </tr>
-                <tr>
-                    <td class="stakeholder">8678678</td>
-                </tr>
+            <tbody id="infoStakeholder">
             </tbody>
         </table>
+        <div class="button-table">
+            <button  class="general" onclick="fillOthers('users','infoStakeholder','STAKEHOLDER')">Refresh</button>
+        </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

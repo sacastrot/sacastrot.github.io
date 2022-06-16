@@ -14,21 +14,23 @@
     <nav class="navbar">
         <a href="../index.html">Data Scientist</a>
     </nav>
-    <form method="post" id="form" class="general">
-        <div class="form">
-            <h1 class="form-title">Create Solution</h1>
-            <div class="group" id="upload">
-                <input type="file" class="file">
+    <div class="content-form">
+        <form method="post" id="form" class="general">
+            <div class="form">
+                <h1 class="form-title">Create Solution</h1>
+                <div class="group" id="upload">
+                    <input type="file" class="file">
+                </div>
+                <div class="group">
+                    <span>Description</span>
+                    <input type="text" name="" id="email" class="description">
+                </div>
             </div>
-            <div class="group">
-                <span>Description</span>
-                <input type="text" name="" id="email" class="description">
+            <div class="button-form">
+                <button type="button" class="general"  onclick="index()">Provide</button>
+                <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
-        </div>
-        <div class="button-form">
-            <button type="button" class="general"  onclick="index()">Provide</button>
-            <button type="button" class="general" onclick="index()">Cancel</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
