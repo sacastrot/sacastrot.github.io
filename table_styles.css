@@ -124,6 +124,13 @@ div.button-table{
     margin-top: 2%;
     width: 30%;
 }
+div.button-table-two{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 50%;
+}
 div.button-table-manages{
     display: flex;
     align-content: center;
@@ -142,7 +149,17 @@ button.general{
     font-size: 16px;
     cursor: pointer;
 }
-
+button.small{
+    font-family: 'roboto';
+    width: 10rem;
+    background: var(--third);  /* fallback for old browsers */
+    border: none;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
 button.general:hover{
     background-color: white;
     color: black;

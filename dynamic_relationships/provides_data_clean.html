@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <title>Provide Data</title>
 </head>
-<body onload="loadProvideData()">
+<body onload="loadProvideClean()">
     <nav class="navbar">
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form method="post" id="form" class="general" onsubmit="saveData(this,event)">
+        <form id="formClean" class="general" onsubmit="saveDataClean(this,event)">
             <div class="form">
                 <h1 class="form-title">Provide Data</h1>
                 <div class="group">
                     <label for="">Name</label>
-                    <input type="text" name="name" class="general" id="nameData"><span class="bar"></span>
+                    <input type="text" name="name" class="general" id="nameDataClean"><span class="bar"></span>
                 </div>
                 <div class="group" id="upload">
-                    <input type="file" name="file" class="file" id="fileData">
+                    <input type="file" name="file" class="file" id="fileDataClean">
                 </div>
                 <div class="group">
                     <label for="">Type</label>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="button-form">
-                <button type="submit" class="general">Provide</button>
+                <button type="submit" class="small">Clean</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
