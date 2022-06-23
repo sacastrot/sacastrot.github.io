@@ -15,25 +15,31 @@
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form method="post" id="form" class="general">
+        <form id="formCreateApplicatoin" class="general" onsubmit="saveApplication(this,event)">
             <div class="form">
                 <h1 class="form-title">Create Application</h1>
                 <div class="group">
                     <label for="">Tool</label>
-                    <input type="text" class="general"><span class="bar"></span>
+                    <input type="text" class="general" name="tool" id="toolApp"><span class="bar"></span>
                 </div>
                 <div class="group">
-                    <label for="">Version control System</label>
-                    <input type="text" class="general"><span class="bar"></span>
+                    <label for="">Version Control System</label>
+                    <select name="vcs" id="verContrSystemApp" class="general">
+                        <option value="" disabled selected>Select classification</option>
+                        <option value="GIT"         >GIT</option>
+                        <option value="DVC"         >DVC</option>
+                        <option value="CODECOMMIT">CODECOMMIT</option>
+                        <option value="SOURCETREE">SOURCETREE</option>
+                    </select>
                 </div>
             </div>
-            </div>
             <div class="button-form">
-                <button type="button" class="general" onclick="index()">Accept</button>
+                <button type="submit" class="general">Accept</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
     </div>
-   
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

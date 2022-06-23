@@ -15,23 +15,25 @@
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form method="post" id="form" class="general">
+        <form id="formModel" class="general" onsubmit="saveModel(this,event)">
             <div class="form">
                 <h1 class="form-title">Determine Model</h1>
                 <div class="group">
                     <label for="">Name</label>
-                    <input type="text" class="general"><span class="bar"></span>
+                    <input type="text" class="general" name="name" id="nameModel"><span class="bar"></span>
                 </div>
                 <div class="group">
                     <label for="">Type</label>
-                    <input type="text" class="general"><span class="bar"></span>
+                    <input type="text" class="general" name="type" id="typeModel"><span class="bar"></span>
                 </div>
             </div>
             <div class="button-form">
-                <button type="button" class="general" onclick="index()">Acept</button>
+                <button type="submit" class="general">Acept</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

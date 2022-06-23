@@ -29,29 +29,13 @@
             <th>Model Name</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>04/07/2021</td>
-            <td>name.csv</td>
-            <td>This application ...</td>
-            <td>1.0</td>
-            <td>04/07/2021</td>
-            <td>5%</td>
-            <td>data12</td>
-            <td>model21</td>
-          </tr>
-          <tr>
-            <td>04/07/2021</td>
-            <td>name.csv</td>
-            <td>This application ...</td>
-            <td>1.0</td>
-            <td>04/07/2021</td>
-            <td>5%</td>
-            <td>data12</td>
-            <td>model21</td>
-          </tr>
-        </tbody>
+        <tbody id="infoSolution"></tbody>
       </table>
+      <div class="button-table">
+        <button  class="general" id="BTNRefreshSolution" onclick="buildSolution('infoSolution')">Refresh</button>
+      </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

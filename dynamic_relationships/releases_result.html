@@ -17,22 +17,22 @@
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form action="" method="post" id="form" class="general">
-            <div class="form">
-                <h1 class="form-title">Release Result</h2>
+        <form id="form" class="general" onsubmit="saveResult(this,event)">
+            <h1 class="form-title">Release Result</h2>
+            <div class="form"> 
                 <div class="group" id="upload">
-                    <input type="file" class="file">
+                    <input type="file" class="file" name="file">
                 </div>
                 <div class="group">
                     <label>Type</label>
-                    <input type="text" class="general"><span class="bar"></span>
+                    <input type="text" class="general" name="type"><span class="bar"></span>
                 </div>
             </div>
             <div class="button-form">
-                <button type="button" class="general" onclick="index()">Accept</button>
+                <button type="submit" class="general">Accept</button>    
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
-    </div>
+    </div
 </body>
 </html>

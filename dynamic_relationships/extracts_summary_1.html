@@ -29,45 +29,15 @@
             <th>Format</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td><input name="answerAdmin" type="radio"></td>
-            <td>Users data</td>
-            <td>1.0</td>
-            <td>user_data.jpg</td>
-            <td>Unstructured Data</td>
-            <td>Deterministic</td>
-            <td>This file contains the information about users of Netflix, with diferent atributtes</td>
-            <td>1.5 GB</td>
-            <td>Images</td>
-          </tr>
-          <tr>
-            <td><input name="answerAdmin" type="radio"></td>
-            <td>Iris Data</td>
-            <td>1.0</td>
-            <td>iris_data.csv</td>
-            <td>Structured Data</td>
-            <td>Deterministic</td>
-            <td>This file contains information about iris flowers an its characteristics</td>
-            <td>30 MB</td>
-            <td>Attributes</td>
-          </tr>
-          <tr>
-            <td><input name="answerAdmin" type="radio"></td>
-            <td>Movies Data</td>
-            <td>1.0</td>
-            <td>movies.csv</td>
-            <td>Structured Data</td>
-            <td>Probabilistic</td>
-            <td>This file contains information about movies an its characteristics</td>
-            <td>30 MB</td>
-            <td>Database</td>
-          </tr>
+        <tbody id="infoDataExtract">
         </tbody>
       </table>
-      <div class="button-table">
-        <button class="general" type="button" onclick="extractSummary()">Next</button>
+      <div class="button-table-two">
+        <button class="general" type="button" id="BTNRefreshDataExtract" onclick="buildDataExtract('infoDataExtract')">Refresh</button>
+        <button class="general" type="button" onclick="nextExtracts()">Next</button>
       </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

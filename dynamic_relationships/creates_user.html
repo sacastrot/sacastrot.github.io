@@ -20,23 +20,23 @@
                 <div class="general-user">
                     <div class="group">
                         <label for="">Identification</label>
-                        <input type="text" name="identification" class="general" id="idUser"><span class="bar"></span>
+                        <input type="text" name="identification" class="general" id="idUser" required><span class="bar"></span>
                     </div>
                     <div class="group">
                         <label for="">Name</label>
-                        <input type="text" name="name" class="general" id="nameUser"><span class="bar"></span>
+                        <input type="text" name="name" class="general" id="nameUser" required><span class="bar"></span>
                     </div>
                     <div class="group">
                         <label for="">Password</label>
-                        <input type="password" name="password" class="general" id="passwordUser"><span class="bar"></span>
+                        <input type="password" name="password" class="general" id="passwordUser" required><span class="bar"></span>
                     </div>
                     <div class="group">
                         <label for="">Email</label>
-                        <input type="email" name="email" class="general" id="emailUser"><span class="bar"></span>
+                        <input type="email" name="email" class="general" id="emailUser" required><span class="bar"></span>
                     </div>
                     <div class="group">
                         <label for="">Role</label>
-                        <select name="role" class="general" id="roleUser" onchange="appearScientist()">
+                        <select name="role" class="general" id="roleUser" onchange="appearScientist()" required>
                             <option value="" disabled selected>Select Role ...</option>
                             <option value="ADMINISTRATOR">ADMINISTRATOR</option>
                             <option value="DATA SCIENTIST">DATA SCIENTIST</option>
@@ -61,17 +61,17 @@
                         <label for="">Style</label>
                         <select  name="style" class="general" id="styleScientist">
                             <option value="" disabled selected>Select Style ...</option>
-                            <option value="INSIGHT PROVIDERS">INSIGHT PROVIDERS</option>
-                            <option value="MODELING SPECIALIST">MODELING SPECIALIST</option>
-                            <option value="PLATFORM BUILDER">PLATFORM BUILDER</option>
-                            <option value="POLYMATH">POLYMATH</option>
-                            <option value="TEAM LEADER">TEAM LEADER</option>
+                            <option value="INSIGHT PROVIDERS"   >INSIGHT PROVIDERS</option>
+                            <option value="MODELING SPECIALIST" >MODELING SPECIALIST</option>
+                            <option value="PLATFORM BUILDER"    >PLATFORM BUILDER</option>
+                            <option value="POLYMATH"            >POLYMATH</option>
+                            <option value="TEAM LEADER"         >TEAM LEADER</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="button-form">
-                <button type="submit" class="general">Create</button>
+                <button type="submit" class="general" id="buttonCreate">Create</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
