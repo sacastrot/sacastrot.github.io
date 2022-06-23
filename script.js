@@ -1206,6 +1206,10 @@ const IDB = (function init(){
             }
         });
         let txResult = makeTransaction('result','readwrite');
+        txResult.oncomplete = (ev) => {
+            $('#BTNindex').attr('disabled', true);
+            alert("BD created succesfully, don't use again!!!!!!!");
+        }
         result.forEach((i) =>{
             let result = add(txResult,'result',i);
             result.onsuccess = (ev) =>{
