@@ -134,25 +134,25 @@ const IDB = (function init(){
         }
     ];
     const model = [{
-        name: "Differential equations",
+        name: "Differential_equations",
         type: "Support vector machines"
       }, {
-        name: "Ceilings detector",
+        name: "Ceilings_detector",
         type: "Deep neural networks"
       }, {
-        name: "Iris class",
+        name: "Iris_class",
         type: "Naive Bayes"
       }, {
         name: "Proximity",
         type: "Deep neural networks"
       }, {
-        name: "Fraud detection",
+        name: "Fraud_detection",
         type: "Deep neural networks"
       }];
     const application =[{
         create: "2022-01-02",
         namedata: "data_collection",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         tool: "Python",
         update: "2022-05-11",
         vcs: "DVC",
@@ -160,7 +160,7 @@ const IDB = (function init(){
       }, {
         create: "2022-05-18",
         namedata: "users_data",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         tool: "Java",
         update: "2022-01-14",
         vcs: "GIT",
@@ -168,7 +168,7 @@ const IDB = (function init(){
       }, {
         create: "2022-03-17",
         namedata: "users_data",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         tool: "Haskell",
         update: "2021-10-10",
         vcs: "SOURCETREE",
@@ -184,7 +184,7 @@ const IDB = (function init(){
       }, {
         create: "2021-10-04",
         namedata: "weather_collection",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         tool: "Haskell",
         update: "2022-01-03",
         vcs: "SOURCETREE",
@@ -192,7 +192,7 @@ const IDB = (function init(){
       }, {
         create: "2022-04-30",
         namedata: "data_collection",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         tool: "Java",
         update: "2022-06-02",
         vcs: "GIT",
@@ -208,7 +208,7 @@ const IDB = (function init(){
       }, {
         create: "2021-12-27",
         namedata: "weather_collection",
-        namemodel: "Iris class",
+        namemodel: "Iris_class",
         tool: "Scala",
         update: "2022-03-01",
         vcs: "GIT",
@@ -216,7 +216,7 @@ const IDB = (function init(){
       }, {
         create: "2021-11-27",
         namedata: "users_data",
-        namemodel: "Iris class",
+        namemodel: "Iris_class",
         tool: "R",
         update: "2022-04-10",
         vcs: "GIT",
@@ -227,7 +227,7 @@ const IDB = (function init(){
         description: "Nulla mollis molestie lorem.",
         file: "PharetraMagnaAc.mp3",
         nameData: "weather_collection",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         performance: 0.609862,
         update: "2021-09-22",
         version: 1
@@ -236,7 +236,7 @@ const IDB = (function init(){
         description: "Fusce congue, diam id ornare imperdiet.",
         file: "SuspendissePotentiIn.mp3",
         nameData: "users_data",
-        namemodel: "Iris class",
+        namemodel: "Iris_class",
         performance: 0.77699,
         update: "2021-11-30",
         version: 1
@@ -245,7 +245,7 @@ const IDB = (function init(){
         description: "Integer a nibh.",
         file: "IpsumPrimis.tiff",
         nameData: "weather_collection",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         performance: 0.37945,
         update: "2022-06-21",
         version: 1
@@ -254,7 +254,7 @@ const IDB = (function init(){
         description: "Pellentesque ultrices mattis odio.",
         file: "EleifendLuctusUltricies.jpeg",
         nameData: "data_collection",
-        namemodel: "Fraud detection",
+        namemodel: "Fraud_detection",
         performance: 0.26181,
         update: "2021-06-24",
         version: 1
@@ -263,7 +263,7 @@ const IDB = (function init(){
         description: "Aliquam non mauris.",
         file: "AcDiam.avi",
         nameData: "users_data",
-        namemodel: "Iris class",
+        namemodel: "Iris_class",
         performance: 0.210211,
         update: "2021-10-07",
         version: 1
@@ -281,7 +281,7 @@ const IDB = (function init(){
         description: "Nulla ut erat id mauris vulputate elementum.",
         file: "NasceturRidiculus.jpeg",
         nameData: "data_collection",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         performance: 0.130805,
         update: "2021-08-18",
         version: 1
@@ -308,7 +308,7 @@ const IDB = (function init(){
         description: "Duis aliquam convallis nunc.",
         file: "MagnaBibendumImperdiet.tiff",
         nameData: "weather_collection",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         performance: 0.316098,
         update: "2022-01-11",
         version: 1
@@ -317,7 +317,7 @@ const IDB = (function init(){
         description: "Maecenas leo odio, condimentum id.",
         file: "Justo.ppt",
         nameData: "weather_collection",
-        namemodel: "Ceilings detector",
+        namemodel: "Ceilings_detector",
         performance: 0.696158,
         update: "2022-03-11",
         version: 1
@@ -326,7 +326,7 @@ const IDB = (function init(){
         description: "Aliquam sit amet diam in magna.",
         file: "NamDuiProin.avi",
         nameData: "weather_collection",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         performance: 0.164338,
         update: "2021-10-05",
         version: 1
@@ -344,7 +344,7 @@ const IDB = (function init(){
         description: "Vestibulum sed magna.",
         file: "Maecenas.avi",
         nameData: "users_data",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         performance: 0.608304,
         update: "2022-01-10",
         version: 1
@@ -353,7 +353,7 @@ const IDB = (function init(){
         description: "Donec quis orci eget orci vehicula condimentum.",
         file: "RisusPraesentLectus.ppt",
         nameData: "data_collection",
-        namemodel: "Differential equations",
+        namemodel: "Differential_equations",
         performance: 0.247421,
         update: "2022-02-10",
         version: 1
