@@ -195,9 +195,9 @@ if(indexedDB){
     }
 
 }
-saveUser = (form, event) =>{
+saveUser = (form, event) => {
     event.preventDefault();
-    const data = Object.fromEntries(new FormData(form).entries());
+    let data = Object.fromEntries(new FormData(form).entries());
     data = Object.fromEntries(Object.entries(data).filter(([_,v])=> v != ''))
     addData('users',data);
 }

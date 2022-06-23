@@ -9,7 +9,9 @@ $(document).ready(function () {
     let projectValidation = false;
     function randomAction(mu, sigma){
 
-        if(distribucionNormal(mu, sigma)<0.05){
+        var normalValue = distribucionNormal(mu, sigma)
+
+        if(normalValue<0.05){
             existUsers = true;
             alert("A user arrived!!!");
         }
