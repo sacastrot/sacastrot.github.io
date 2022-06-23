@@ -26,23 +26,14 @@
             <th>Data Name</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Yes</td>
-            <td>04/07/2021</td>
-            <td>This summary ...</td>
-            <td>inform.pdf</td>
-            <td>data12</td>
-          </tr>
-          <tr>
-            <td>Yes</td>
-            <td>04/07/2021</td>
-            <td>This summary ...</td>
-            <td>inform.pdf</td>
-            <td>data12</td>
-          </tr>
+        <tbody id="infoSummary">
         </tbody>
       </table>
+      <div class="button-table">
+        <button class="general" type="button" id="BTNRefreshSummary" onclick="buildSummary('infoSummary')">Refresh</button>
+      </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

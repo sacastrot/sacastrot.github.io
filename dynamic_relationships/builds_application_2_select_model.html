@@ -11,36 +11,25 @@
     <title>Select Model</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="../index.html">Data Scientist</a>
-    </nav>
-    <div class="content-table">
-      <p class="table-title">Select Model</p>
-      <table class="twofive">
-        <thead>
-          <tr>
-            <th colspan="2">Model</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Regretion - Lineal Regretion</td>
-          </tr>
-          <tr>
-            <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Classification - Resnet</td>
-            
-          </tr>
-          <tr>
-            <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-            <td>Unsupervised - K-means</td>
-            
-        </tbody>
+  <nav class="navbar">
+    <a href="../index.html">Data Scientist</a>
+  </nav>
+  <div class="content-table">
+    <p class="table-title">Select Model</p>
+    <table class="twofive">
+      <thead>
+        <tr>
+          <th colspan="2">Model</th>
+        </tr>
+      </thead>
+      <tbody id="infoSelectModel"></tbody>
       </table>
+      <div class="button-table">
+        <button id="BTNRefreshSelectModel" class="general" type="button" onclick="buildSelectModel('infoSelectModel')">Refresh</button>
+        <button class="general" type="button" onclick="createApplication()">Next</button>
+      </div>
     </div>
-    <div class="button-table">
-      <button class="general" type="button" onclick="applicationCreate()">Next</button>
-  </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

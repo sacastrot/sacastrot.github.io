@@ -10,42 +10,74 @@
     <script src="../script.js"></script>
     <title>Edit User</title>
 </head>
-<body>
+<body onload="loadUserEdit()">
     <nav class="navbar">
         <a href="../index.html">Data Scientist</a>
     </nav>
-    <form method="post" id="form" class="general">
-        <div class="form">
+    <div class="content-form">
+        <form id="formCreate" class="general" onsubmit="saveEditUser(this,event)">
             <h1 class="form-title">Edit User</h1>
-            <div class="group">
-                <label for="">Identification</label>
-                <input value="1007290916" type="text" class="general"><span class="bar"></span>
+            <div class="form-create-user">
+                <div class="general-user">
+                    <div class="group">
+                        <label for="">Identification</label>
+                        <input type="text" name="identification" class="general" id="idUser" readonly><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" class="general" id="nameUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Password</label>
+                        <input type="password" name="password" id="password" class="general" id="passwordUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Email</label>
+                        <input type="text" name="email" class="general" id="emailUser"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label>Role</label>
+                        <select name="role" id="roleUser" class="general" onchange="appearScientist()">
+                            <option value="ADMINISTRATOR">ADMINISTRATOR</option>
+                            <option value="DATA SCIENTIST">DATA SCIENTIST</option>
+                            <option value="STAKEHOLDER">STAKEHOLDER</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="data-scientist">
+                    <div class="group">
+                        <label  for="">Job Title</label>
+                        <input  type="text" name="job" class="general" id="jobScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Experience</label>
+                        <input  type="text" name="experience" class="general" id="experienceScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Background</label>
+                        <input  type="text" name="background" class="general" id="backgroundScientist"><span class="bar"></span>
+                    </div>
+                    <div class="group">
+                        <label for="">Style</label>
+                        <select  name="style" class="general" id="styleScientist">
+                            <option value="" disabled selected>Select Style ...</option>
+                            <option value="INSIGHT PROVIDERS">INSIGHT PROVIDERS</option>
+                            <option value="MODELING SPECIALIST">MODELING SPECIALIST</option>
+                            <option value="PLATFORM BUILDER">PLATFORM BUILDER</option>
+                            <option value="POLYMATH">POLYMATH</option>
+                            <option value="TEAM LEADER">TEAM LEADER</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="group">
-                <label for="">Name</label>
-                <input value="Valentin Osorio" type="text" class="general"><span class="bar"></span>
+            <div class="button-form">
+                <button type="submit" class="general">Accept</button>
+                <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
-            <div class="group">
-                <label for="">Password</label>
-                <input type="password" name="" id="password" class="general"><span class="bar"></span>
-            </div>
-            <div class="group">
-                <label for="">Email</label>
-                <input value="dosoriom@unal.edu.co" type="text" class="general"><span class="bar"></span>
-            </div>
-            <div class="group">
-                <label>Role</label>
-                <select name="" id="" class="general">
-                    <option value="">ADMINISTRATOR</option>
-                    <option value="">DATA SCIENTIST</option>
-                    <option value="">STAKEHOLDER</option>
-                </select>
-            </div>
-        </div>
-        <div class="button-form">
-            <button type="button" class="general" onclick="index()">Accept</button>
-            <button type="button" class="general" onclick="index()">Cancel</button>
-        </div>
-    </form>
+        </form>
+    </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../crypto/CryptoJS_v3.1.2/rollups/md5.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -149,6 +149,16 @@ button.general{
     font-size: 16px;
     cursor: pointer;
 }
+button.general-index{
+    font-family: 'roboto';
+    width: 15rem;
+    background: var(--third);  /* fallback for old browsers */
+    border: none;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
 button.small{
     font-family: 'roboto';
     width: 10rem;
@@ -161,6 +171,14 @@ button.small{
     cursor: pointer;
 }
 button.general:hover{
+    background-color: white;
+    color: black;
+}
+button.general-index:hover{
+    background-color: white;
+    color: black;
+}
+button.small:hover{
     background-color: white;
     color: black;
 }

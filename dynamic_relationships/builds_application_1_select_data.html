@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,31 +16,19 @@
     </nav>
 
     <div class="content-table">
-      <P class="table-title">Select Data</P>
-      <table class="twofive">
-        <thead>
-            <tr>
-                <th colspan="2">Data Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-                <td>Users data</td>
-            </tr>
-            <tr>
-                <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-                <td>Iris Data</td>
-            </tr>
-            <tr>
-                <td><input type="radio" id="html" name="fav_language" value="HTML"></td>
-                <td>Movies Data</td>
-            </tr>
-        </tbody>
-    </table>
+        <h1 class="table-title">Select Data</h1>
+        <table class="twofive">
+            <thead>
+                <tr><th colspan="2">Data Name</th></tr>
+            </thead>
+            <tbody id="infoSelectData"></tbody>
+        </table>
+        <div class="button-table-two">
+            <button id="BTNRefreshSelectData" class="general" type="button" onclick="buildSelectData('infoSelectData')">Refresh</button>
+            <button class="general" type="button" onclick="selectModel()">Next</button>
+        </div>
     </div>
-    <div class="button-table">
-        <button class="general" type="submit" onclick="scientistBuild2()">Next</button>
-    </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

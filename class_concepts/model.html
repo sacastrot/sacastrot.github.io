@@ -25,22 +25,13 @@
                     <th>Type</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Iris class model</td>
-                    <td>Classification</td>
-                </tr>
-                <tr>
-                    <td>Fraud detection model</td>
-                    <td>Clustering</td>
-                </tr>
-                <tr>
-                    <td>Differential equations model</td>
-                    <td>Growth model</td>
-                </tr>
-            </tbody>
+            <tbody id="infoModel"></tbody>
         </table>
+        <div class="button-table">
+            <button  class="general" id="BTNRefreshModel" onclick="buildModel('infoModel')">Refresh</button>
+        </div>
     </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
-
 </html>

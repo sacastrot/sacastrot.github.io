@@ -15,19 +15,19 @@
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form method="post" id="form" class="general">
+        <form id="formSolution" class="general" onsubmit="saveSolution(this,event)">
             <div class="form">
                 <h1 class="form-title">Create Solution</h1>
                 <div class="group" id="upload">
-                    <input type="file" class="file">
+                    <input type="file" class="file" name="file" id="fileSolution">
                 </div>
                 <div class="group">
                     <span>Description</span>
-                    <input type="text" name="" id="email" class="description">
+                    <input type="text" name="description" id="descSolution" class="description">
                 </div>
             </div>
             <div class="button-form">
-                <button type="button" class="general"  onclick="index()">Provide</button>
+                <button type="submit" class="general">Accept</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>

@@ -11,36 +11,23 @@
     <title>Select Model</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="../index.html">Data Scientist</a>
-    </nav>
+  <nav class="navbar">
+    <a href="../index.html">Data Scientist</a>
+  </nav>
     <div class="content-table">
-      <P class="table-title">Select Model</P>
+      <h1 class="table-title">Select Model</h1>
       <table class="twofive">
         <thead>
-          <tr>
-            <th colspan="2">Model</th>
-          </tr>
+          <tr><th colspan="2">Model</th></tr>
         </thead>
-        <tbody>
-          <tr>
-            <td><input type="radio" id="html" name="model" value="HTML"></td>
-            <td>Regretion - Lineal Regretion</td>
-          </tr>
-          <tr>
-            <td><input type="radio" id="html" name="model" value="HTML"></td>
-            <td>Classification - Resnet</td>
-            
-          </tr>
-          <tr>
-            <td><input type="radio" id="html" name="model" value="HTML"></td>
-            <td>Unsupervised - K-means</td>
-            
-        </tbody>
+        <tbody id="infoSelectModelUpdate"></tbody>
       </table>
+      <div class="button-table-two">
+        <button class="general" type="button" id="BTNRefreshSMupdate" onclick="buildSMupdate('infoSelectModelUpdate')">Refresh</button>
+        <button class="general" type="button" onclick="selectApplication()">Next</button>
+      </div>
     </div>
-    <div class="button-table">
-      <button class="general" type="button" onclick="scientistUpdate2()">Next</button>
-  </div>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -14,12 +14,12 @@
         <a href="../index.html">Data Scientist</a>
     </nav>
     <div class="content-form">
-        <form id="formClean" class="general" onsubmit="saveDataClean(this,event)">
+        <form id="formClean" class="general" onsubmit="UpdataData(this,event)">
             <div class="form">
                 <h1 class="form-title">Provide Data</h1>
                 <div class="group">
                     <label for="">Name</label>
-                    <input type="text" name="name" class="general" id="nameDataClean"><span class="bar"></span>
+                    <input type="text" name="name" class="general" id="nameDataClean" readonly><span class="bar"></span>
                 </div>
                 <div class="group" id="upload">
                     <input type="file" name="file" class="file" id="fileDataClean">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="button-form">
-                <button type="submit" class="small">Clean</button>
+                <button type="submit" class="general">Clean</button>
                 <button type="button" class="general" onclick="index()">Cancel</button>
             </div>
         </form>
